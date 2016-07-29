@@ -1,4 +1,11 @@
 #pragma once
 
 #include "Core.h"
-#include <SDL_mixer.h>
+
+
+class Sound {
+
+public:
+	static void PlayAudio(Mix_Chunk* sfx, int channel, int loops);
+	
+};

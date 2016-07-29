@@ -1,0 +1,6 @@
+﻿  Sounds.cpp
+  Game_Main.cpp
+c:\users\douglas ferreira\documents\visual studio 2015\projects\gamebase\gamebase\physics.h(36): warning C4091: 'static ': ignored on left of 'ObjectState' when no variable is declared
+  Generating Code...
+  GameBase.vcxproj -> C:\Users\Douglas Ferreira\documents\visual studio 2015\Projects\GameBase\Debug\GameBase.exe
+  GameBase.vcxproj -> C:\Users\Douglas Ferreira\documents\visual studio 2015\Projects\GameBase\Debug\GameBase.pdb (Partial PDB)

@@ -10,6 +10,7 @@ Rio de Janeiro, 23/05/2016
 #include <SDL.h>
 #include <SDL_image.h>
 #include <SDL_ttf.h>
+#include <SDL_mixer.h>
 #include <iostream>
 #include <fstream>
 #include <string>

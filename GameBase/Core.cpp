@@ -12,8 +12,6 @@ bool Input::stillPressed = false;
 SDL_Window* _window;    // Janela do programa
 SDL_Renderer* renderer; // Renderizador que exibirá a imagem
 SDL_Event _event, _inputEvent;
-SDL_Surface* icon;
-SDL_Thread* inputThread; // Thread para controlar os eventos de input
 
 bool isRunning = true; // Variavel para o loop principal que verifica o jogo está ou não em execução
 Uint32 globalTime; //Variável para controlar FPS.
@@ -28,11 +26,9 @@ int main(int argc, char* args[]) {
 	_window = SDL_CreateWindow("Killer Run", 50, 50, WINDOW_WIDTH, WINDOW_HEIGHT, SDL_WINDOW_SHOWN);
 	//Cria o Render
 	renderer = SDL_CreateRenderer(_window, -1, SDL_RENDERER_ACCELERATED);
+	//Inicializa o Modulo de áudio
+	Mix_OpenAudio(22050, MIX_DEFAULT_FORMAT, 2, 4096);
 	
-	//Coloca uma imagem de icone no .exe
-	icon = IMG_Load("Resources/Images/Plane.png");
-	SDL_SetWindowIcon(_window, icon);
-
 	Game_Setup(); // Inicializa configurações do jogo
 		
 	////////////////////////// Loop Principal ///////////////////////
@@ -65,6 +61,7 @@ int main(int argc, char* args[]) {
 	
 	SDL_DestroyWindow(_window);
 	SDL_DestroyRenderer(renderer);
+	Mix_CloseAudio();
 	SDL_Quit();
 	
 	return 0;
@@ -148,7 +145,7 @@ SDL_Texture* GameObject::GetTexture(){
 		} 
 		return false;
 	}
-
+	// Só pode ser pode usar uma vez, precisa de melhorias
 	bool Input::KeyPress(SDL_Scancode keypress)	{
 		
 		SDL_Event _inputEvent;
