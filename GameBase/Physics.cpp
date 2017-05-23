@@ -7,8 +7,6 @@ Rio de Janeiro, 21/04/2016
 
 #include "Physics.h"
 
-
-
 //Aplica gravidade sobre qualquer objeto na cena. Precisa ter um chão de referencia.
 float Physics::ApplyGravity(GameObject &object, float gravityForce, float floorReference) {
 	

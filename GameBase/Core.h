@@ -57,7 +57,6 @@ public:
 	static bool stillPressed;
 	static bool	KeyHold(SDL_Scancode keypressed); 
 	static bool KeyPress(SDL_Scancode keypress); 
-	
 };
 
 	// Este método executa um objeto de jogo na cena

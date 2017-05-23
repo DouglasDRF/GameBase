@@ -1,6 +1,15 @@
 ﻿  Sounds.cpp
+  Physics.cpp
+c:\users\douglas ferreira\documents\github\gamebase\gamebase\physics.h(36): warning C4091: 'static ': ignorado à esquerda de 'ObjectState' quando nenhuma variável é declarada
+c:\users\douglas ferreira\documents\github\gamebase\gamebase\physics.cpp(35): warning C4244: '=': conversão de 'float' para 'int', possível perda de dados
+c:\users\douglas ferreira\documents\github\gamebase\gamebase\physics.cpp(65): warning C4018: '>': incompatibilidade de signed/unsigned
+c:\users\douglas ferreira\documents\github\gamebase\gamebase\physics.cpp(79): warning C4305: '-=': truncamento de 'double' para 'float'
+  GUI.cpp
   Game_Main.cpp
-c:\users\douglas ferreira\documents\visual studio 2015\projects\gamebase\gamebase\physics.h(36): warning C4091: 'static ': ignored on left of 'ObjectState' when no variable is declared
-  Generating Code...
-  GameBase.vcxproj -> C:\Users\Douglas Ferreira\documents\visual studio 2015\Projects\GameBase\Debug\GameBase.exe
-  GameBase.vcxproj -> C:\Users\Douglas Ferreira\documents\visual studio 2015\Projects\GameBase\Debug\GameBase.pdb (Partial PDB)
+c:\users\douglas ferreira\documents\github\gamebase\gamebase\physics.h(36): warning C4091: 'static ': ignorado à esquerda de 'ObjectState' quando nenhuma variável é declarada
+  Game_GUI.cpp
+  Core.cpp
+c:\users\douglas ferreira\documents\github\gamebase\gamebase\physics.h(36): warning C4091: 'static ': ignorado à esquerda de 'ObjectState' quando nenhuma variável é declarada
+  Gerando Código...
+  GameBase.vcxproj -> C:\Users\Douglas Ferreira\Documents\GitHub\GameBase\Debug\GameBase.exe
+  GameBase.vcxproj -> C:\Users\Douglas Ferreira\Documents\GitHub\GameBase\Debug\GameBase.pdb (Partial PDB)
